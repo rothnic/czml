@@ -468,26 +468,30 @@ class Clock(_CZMLBaseObject):
     Property Name: clock
     interpolatable: no
     Sub-properties:
-        currentTime:
-            Scope: Interval
-            Type: String
-            Description: The current time.
-        multiplier:
-            Scope: Interval
-            Type: String
-            Description: The multiplier, which in TICK_DEPENDENT mode is the number of seconds to advance each tick.
-                In SYSTEM_CLOCK_DEPENDENT mode, it is the multiplier applied to the amount of time elapsed
-                between ticks. This value is ignored in SYSTEM_CLOCK mode.
-        range:
-            Scope: Interval
-            Type: String
-            Description: The behavior of a clock when its current time reaches its start or end points.
-                Valid values are 'UNBOUNDED', 'CLAMPED', and 'LOOP_STOP'.
-        step:
-            Scope: Interval
-            Type: String
-            Description: Defines how a clock steps in time. Valid values are 'SYSTEM_CLOCK',
-                'SYSTEM_CLOCK_MULTIPLIER', and 'TICK_DEPENDENT'.
+
+    currentTime:
+        Scope: Interval
+        Type: String
+        Description: The current time.
+
+    multiplier:
+        Scope: Interval
+        Type: String
+        Description: The multiplier, which in TICK_DEPENDENT mode is the number of seconds to advance each tick.
+        In SYSTEM_CLOCK_DEPENDENT mode, it is the multiplier applied to the amount of time elapsed
+        between ticks. This value is ignored in SYSTEM_CLOCK mode.
+
+    range:
+        Scope: Interval
+        Type: String
+        Description: The behavior of a clock when its current time reaches its start or end points.
+        Valid values are 'UNBOUNDED', 'CLAMPED', and 'LOOP_STOP'.
+
+    step:
+        Scope: Interval
+        Type: String
+        Description: Defines how a clock steps in time. Valid values are 'SYSTEM_CLOCK',
+        'SYSTEM_CLOCK_MULTIPLIER', and 'TICK_DEPENDENT'.
 
     """
 

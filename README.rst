@@ -1,5 +1,5 @@
-Introduction
-############
+CZML
+====
 
 A library to read and write CZML_ files for the Cesium_ Webglobe
 
@@ -8,7 +8,7 @@ A library to read and write CZML_ files for the Cesium_ Webglobe
 .. _CZML: https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Guide
 
 Requirements
--------------
+------------
 
 
 * pygeoif:  https://github.com/cleder/pygeoif
