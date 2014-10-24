@@ -217,9 +217,7 @@ class _DateTimeAware(_CZMLBaseObject):
     _previousTime = None
     _properties = ('epoch', 'nextTime', 'previousTime')
 
-    epoch = datetime_property('epoch', doc=
-        """ Specifies the epoch to use for times specifies as seconds
-        since an epoch. """)
+    epoch = None
     nextTime = datetime_property('nextTime', allow_offset=True, doc=
         """The time of the next sample within this interval, specified as
         either an ISO 8601 date and time string or as seconds since epoch.
@@ -319,6 +317,80 @@ class Number(_DateTimeAware):
             return data['number']
         return super(Number, self).data()
 
+class Clock(_CZMLBaseObject):
+    """A simulated clock.
+    Property Name: clock
+    interpolatable: no
+    Sub-properties:
+        currentTime:
+            Scope: Interval
+            Type: String
+            Description: The current time.
+        multiplier:
+            Scope: Interval
+            Type: String
+            Description: The multiplier, which in TICK_DEPENDENT mode is the number of seconds to advance each tick.
+                In SYSTEM_CLOCK_DEPENDENT mode, it is the multiplier applied to the amount of time elapsed
+                between ticks. This value is ignored in SYSTEM_CLOCK mode.
+        range:
+            Scope: Interval
+            Type: String
+            Description: The behavior of a clock when its current time reaches its start or end points.
+                Valid values are 'UNBOUNDED', 'CLAMPED', and 'LOOP_STOP'.
+        step:
+            Scope: Interval
+            Type: String
+            Description: Defines how a clock steps in time. Valid values are 'SYSTEM_CLOCK',
+                'SYSTEM_CLOCK_MULTIPLIER', and 'TICK_DEPENDENT'.
+    """
+    interval = None
+    currentTime = None
+    multiplier = None
+    range = None
+    step = None
+
+    def __init__(self, **kwargs):
+        self._properties += ('interval', 'currentTime', 'multiplier',
+                         'range', 'step')
+        super(Clock, self).__init__(**kwargs)
+
+    def data(self):
+        d = {}
+        if self.interval:
+            d['interval'] = self.interval
+        if self.currentTime:
+            d['currentTime'] = self.currentTime
+        if self.multiplier:
+            d['multiplier'] = self.multiplier
+        if self.range:
+            d['range'] = self.range
+        if self.step:
+            d['step'] = self.step
+        return d
+
+    def load(self, data):
+        self.interval = data.get('interval', None)
+        self.currentTime = data.get('currentTime', None)
+
+
+
+
+from datetime import timedelta
+
+class Interval(_CZMLBaseObject):
+
+    _start = None
+    _end = None
+
+    start = datetime_property('start', doc=
+            """ The start of an interval """)
+    end = datetime_property('end', doc=
+            """ The end of an interval """)
+
+    #def defaultInterval(self):
+    #    self.start = datetime.now().date()
+   #     self.end = self.start + timedelta(days=1)
+
 
 
 class Position(_DateTimeAware):
@@ -346,7 +418,7 @@ class Position(_DateTimeAware):
     def __init__(self, **kwargs):
         self._properties += ('cartesian', 'cartographicRadians',
                              'cartographicDegrees', 'interpolationAlgorithm',
-                             'interpolationDegree', 'referenceFrame')
+                             'interpolationDegree')
         super(Position, self).__init__(**kwargs)
 
     @property
@@ -1303,7 +1375,7 @@ class CZMLPacket(_CZMLBaseObject):
     # A single CZML stream or document can contain multiple packets with
     # the same id, describing different aspects of the same object.
     id = None
-
+    name = None
     # The availability property indicates when data for an object is available.
     # If data for an object is known to be available at the current animation
     # time, but the client does not yet have that data (presumably because
@@ -1368,6 +1440,10 @@ class CZMLPacket(_CZMLBaseObject):
     _ellipsoid = None
     # Ensure ellipsoids are Ellipsoid objects and handle them appropriately.
     ellipsoid = class_property(Ellipsoid, 'ellipsoid')
+
+    # A clock
+    _clock = None
+    clock = None
 
     # ellipse
     _ellipse = None
@@ -1573,11 +1649,33 @@ class CZMLPacket(_CZMLBaseObject):
         else:
             raise TypeError
 
+    @property
+    def clock(self):
+        """A simulated clock"""
+
+        if self._clock is not None:
+            return self._clock.data()
+
+    @clock.setter
+    def clock(self, clock):
+        if isinstance(clock, Clock):
+            self._clock = clock
+        elif isinstance(clock, dict):
+            p = Clock()
+            p.load(clock)
+            self._clock = p
+        elif clock is None:
+            self._clock = None
+        else:
+            raise TypeError
+
 
     def data(self):
         d = {}
         if self.id:
             d['id'] = self.id
+        if self.name:
+            d['name'] = self.name
         if self.availability is not None:
             d['availability'] = self.availability
         if self.billboard is not None:
@@ -1602,6 +1700,8 @@ class CZMLPacket(_CZMLBaseObject):
             d['path'] = self.path
         if self.ellipsoid is not None:
             d['ellipsoid'] = self.ellipsoid
+        if self.clock is not None:
+            d['clock'] = self.clock
         if self.ellipse is not None:
             d['ellipse'] = self.ellipse
         return d
@@ -1609,6 +1709,7 @@ class CZMLPacket(_CZMLBaseObject):
 
     def load(self, data):
         self.id = data.get('id', None)
+        self.name = data.get('name', None)
         # self.availability = data.get('availability', None)
         self.billboard = data.get('billboard', None)
         self.position = data.get('position', None)
@@ -1617,4 +1718,4 @@ class CZMLPacket(_CZMLBaseObject):
         self.vertexPositions = data.get('vertexPositions', None)
         self.polyline = data.get('polyline', None)
         self.polygon = data.get('polygon', None)
-
+        self.clock = data.get('clock', None)
