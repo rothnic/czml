@@ -1,0 +1,1628 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CZML Module &mdash; czml 0.2 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="czml 0.2 documentation" href="index.html"/>
+        <link rel="next" title="History" href="History.html"/>
+        <link rel="prev" title="Welcome to czml’s documentation!" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> czml</a>
+        
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">CZML Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="History.html">History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="History.html#unreleased">0.2 (unreleased)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="History.html#v-0-1-2013-04-05">v 0.1 (2013/04/05)</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">czml</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>CZML Module</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/CZML.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="module-czml.czml">
+<span id="czml-module"></span><h1>CZML Module<a class="headerlink" href="#module-czml.czml" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="czml.czml.Billboard">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Billboard</tt><big>(</big><em>color=None</em>, <em>image=None</em>, <em>scale=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Billboard"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Billboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>A billboard, or viewport-aligned image.</p>
+<p>The billboard is positioned in the scene by the position property.
+A billboard is sometimes called a marker.</p>
+<dl class="attribute">
+<dt id="czml.czml.Billboard.color">
+<tt class="descname">color</tt><a class="reference internal" href="_modules/czml/czml.html#Billboard.color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Billboard.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color of the billboard. This color value is multiplied
+with the values of the billboard&#8217;s &#8220;image&#8221; to produce the
+final color.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Billboard.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Billboard.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Billboard.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Billboard.image">
+<tt class="descname">image</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Billboard.image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Billboard.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Billboard.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Billboard.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Billboard.scale">
+<tt class="descname">scale</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Billboard.scale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Billboard.show">
+<tt class="descname">show</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Billboard.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.CZML">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">CZML</tt><big>(</big><em>packets=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZML"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZML" title="Permalink to this definition">¶</a></dt>
+<dd><p>CZML is a subset of JSON, meaning that a valid CZML document is also a valid JSON document.</p>
+<p>Specifically, a CZML document contains a single JSON array where each object-literal element in the array is
+a CZML packet.</p>
+<dl class="method">
+<dt id="czml.czml.CZML.append">
+<tt class="descname">append</tt><big>(</big><em>packet</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZML.append"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZML.append" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>packet</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.CZML.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZML.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZML.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.CZML.dumps">
+<tt class="descname">dumps</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZML.dumps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZML.dumps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.CZML.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZML.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZML.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZML.packets">
+<tt class="descname">packets</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.CZML.packets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.CZMLPacket">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">CZMLPacket</tt><big>(</big><em>id=None</em>, <em>availability=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket" title="Permalink to this definition">¶</a></dt>
+<dd><p>A CZML packet describes the graphical properties for a single
+object in the scene, such as a single aircraft.</p>
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.availability">
+<tt class="descname">availability</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.CZMLPacket.availability" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.billboard">
+<tt class="descname">billboard</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.billboard"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.billboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>A billboard, or viewport-aligned image.</p>
+<p>The billboard is positioned in the scene by the position property. A billboard is sometimes
+called a marker.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Billboard</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.camera">
+<tt class="descname">camera</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.CZMLPacket.camera" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.clock">
+<tt class="descname">clock</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.clock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.clock" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simulated clock</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Clock</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.cone">
+<tt class="descname">cone</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.cone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.cone" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Cone</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.CZMLPacket.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.ellipse">
+<tt class="descname">ellipse</tt><a class="headerlink" href="#czml.czml.CZMLPacket.ellipse" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.ellipsoid">
+<tt class="descname">ellipsoid</tt><a class="headerlink" href="#czml.czml.CZMLPacket.ellipsoid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.id">
+<tt class="descname">id</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.CZMLPacket.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.label">
+<tt class="descname">label</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.label"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string of text.</p>
+<p>The label is positioned in the scene by the
+position property.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Label</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.CZMLPacket.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.name">
+<tt class="descname">name</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.CZMLPacket.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.orientation">
+<tt class="descname">orientation</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.orientation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>An orientation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Orientation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.path">
+<tt class="descname">path</tt><a class="headerlink" href="#czml.czml.CZMLPacket.path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.point">
+<tt class="descname">point</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.point" title="Permalink to this definition">¶</a></dt>
+<dd><p>A point, or viewport-aligned circle. The point is positioned in
+the scene by the position property.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Point</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.polygon">
+<tt class="descname">polygon</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.polygon"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>A polygon, which is a closed figure on the surface of the Earth.</p>
+<p>The vertices of the polygon are specified by the vertexPositions
+property.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Polygon</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.polyline">
+<tt class="descname">polyline</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.polyline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.polyline" title="Permalink to this definition">¶</a></dt>
+<dd><p>A polyline, which is a line in the scene composed of multiple segments.
+The vertices of the polyline are specified by the vertexPositions
+property.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Polyline</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.position">
+<tt class="descname">position</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.position"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position of the object in the world.</p>
+<p>The position has no direct visual representation, but it is used to locate billboards, labels,
+and other primitives attached to the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.Position</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.pyramid">
+<tt class="descname">pyramid</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.CZMLPacket.pyramid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.CZMLPacket.vertexPositions">
+<tt class="descname">vertexPositions</tt><a class="reference internal" href="_modules/czml/czml.html#CZMLPacket.vertexPositions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.CZMLPacket.vertexPositions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The world-space positions of vertices.</p>
+<p>The vertex positions have no direct visual representation,
+but they are used to define polygons, polylines,
+and other objects attached to the object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">czml.VertexPositions</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Camera">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Camera</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Camera"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Camera" title="Permalink to this definition">¶</a></dt>
+<dd><p>A camera.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Clock">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Clock</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Clock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Clock" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simulated clock.</p>
+<p>Property Name: clock
+interpolatable: no
+Sub-properties:</p>
+<dl class="docutils">
+<dt>currentTime:</dt>
+<dd>Scope: Interval
+Type: String
+Description: The current time.</dd>
+<dt>multiplier:</dt>
+<dd>Scope: Interval
+Type: String
+Description: The multiplier, which in TICK_DEPENDENT mode is the number of seconds to advance each tick.
+In SYSTEM_CLOCK_DEPENDENT mode, it is the multiplier applied to the amount of time elapsed
+between ticks. This value is ignored in SYSTEM_CLOCK mode.</dd>
+<dt>range:</dt>
+<dd>Scope: Interval
+Type: String
+Description: The behavior of a clock when its current time reaches its start or end points.
+Valid values are &#8216;UNBOUNDED&#8217;, &#8216;CLAMPED&#8217;, and &#8216;LOOP_STOP&#8217;.</dd>
+<dt>step:</dt>
+<dd>Scope: Interval
+Type: String
+Description: Defines how a clock steps in time. Valid values are &#8216;SYSTEM_CLOCK&#8217;,
+&#8216;SYSTEM_CLOCK_MULTIPLIER&#8217;, and &#8216;TICK_DEPENDENT&#8217;.</dd>
+</dl>
+<dl class="attribute">
+<dt id="czml.czml.Clock.currentTime">
+<tt class="descname">currentTime</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Clock.currentTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Clock.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Clock.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Clock.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Clock.interval">
+<tt class="descname">interval</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Clock.interval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Clock.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Clock.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Clock.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Clock.multiplier">
+<tt class="descname">multiplier</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Clock.multiplier" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Clock.range">
+<tt class="descname">range</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Clock.range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Clock.step">
+<tt class="descname">step</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Clock.step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Color">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Color</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Color object to contain optionally time varying color values.</p>
+<dl class="attribute">
+<dt id="czml.czml.Color.rgba">
+<tt class="descname">rgba</tt><a class="reference internal" href="_modules/czml/czml.html#Color.rgba"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Color.rgba" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color specified as an array of color components</p>
+<p>[Red, Green, Blue, Alpha] where each component is in the
+range 0-255. If the array has four elements, the color is constant.
+If it has five or more elements, they are time-tagged samples arranged as
+[Time, Red, Green, Blue, Alpha, Time, Red, Green, Blue, Alpha, ...],
+where Time is an ISO 8601 date and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Color.rgbaf">
+<tt class="descname">rgbaf</tt><a class="reference internal" href="_modules/czml/czml.html#Color.rgbaf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Color.rgbaf" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color specified as an array of color components</p>
+<p>[Red, Green, Blue, Alpha] where each component is in the
+range 0.0-1.0. If the array has four elements, the color is constant.
+If it has five or more elements, they are time-tagged samples
+arranged as
+[Time, Red, Green, Blue, Alpha, Time, Red, Green, Blue, Alpha, ...],
+where Time is an ISO 8601 date and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Cone">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Cone</tt><big>(</big><em>epoch=None</em>, <em>nextTime=None</em>, <em>previousTime=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Cone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Cone" title="Permalink to this definition">¶</a></dt>
+<dd><p>A cone starts at a point or apex and extends in a circle of directions.</p>
+<p>A cone starts at a point or apex and extends in a circle of
+directions which all have the same angular separation from the Z-axis
+of the object to which the cone is attached. The cone may be capped
+at a radial limit, it may have an inner hole, and it may be only a
+part of a complete cone defined by clock angle limits. The apex
+point of the cone is defined by the position property and extends in
+the direction of the Z-axis as defined by the orientation property.</p>
+<dl class="attribute">
+<dt id="czml.czml.Cone.capMaterial">
+<tt class="descname">capMaterial</tt><a class="headerlink" href="#czml.czml.Cone.capMaterial" title="Permalink to this definition">¶</a></dt>
+<dd><p>The material to use to fill in the object you are creating.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Cone.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Cone.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Cone.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.innerHalfAngle">
+<tt class="descname">innerHalfAngle</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.innerHalfAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.innerMaterial">
+<tt class="descname">innerMaterial</tt><a class="headerlink" href="#czml.czml.Cone.innerMaterial" title="Permalink to this definition">¶</a></dt>
+<dd><p>The material to use to fill in the object you are creating.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.intersectionColor">
+<tt class="descname">intersectionColor</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.intersectionColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.maximumClockAngle">
+<tt class="descname">maximumClockAngle</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.maximumClockAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.minimumClockAngle">
+<tt class="descname">minimumClockAngle</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.minimumClockAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.outerHalfAngle">
+<tt class="descname">outerHalfAngle</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.outerHalfAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.outerMaterial">
+<tt class="descname">outerMaterial</tt><a class="headerlink" href="#czml.czml.Cone.outerMaterial" title="Permalink to this definition">¶</a></dt>
+<dd><p>The material to use to fill in the object you are creating.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.radius">
+<tt class="descname">radius</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.radius" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.show">
+<tt class="descname">show</tt><em class="property"> = True</em><a class="headerlink" href="#czml.czml.Cone.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.showIntersection">
+<tt class="descname">showIntersection</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Cone.showIntersection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Cone.silhouetteMaterial">
+<tt class="descname">silhouetteMaterial</tt><a class="headerlink" href="#czml.czml.Cone.silhouetteMaterial" title="Permalink to this definition">¶</a></dt>
+<dd><p>The material to use to fill in the object you are creating.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Ellipse">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Ellipse</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Ellipse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Ellipse" title="Permalink to this definition">¶</a></dt>
+<dd><p>An ellipse, which is a closed curve on the surface of the Earth.
+The ellipse is positioned using the position property.</p>
+<p>Note that this requires a polygon or polyline to actually get drawn!</p>
+<dl class="attribute">
+<dt id="czml.czml.Ellipse.bearing">
+<tt class="descname">bearing</tt><a class="headerlink" href="#czml.czml.Ellipse.bearing" title="Permalink to this definition">¶</a></dt>
+<dd><p>The angle from north (clockwise) in radians.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Ellipse.semiMajorAxis">
+<tt class="descname">semiMajorAxis</tt><a class="headerlink" href="#czml.czml.Ellipse.semiMajorAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>The length of the ellipse&#8217;s semi-major axis in meters.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Ellipse.semiMinorAxis">
+<tt class="descname">semiMinorAxis</tt><a class="headerlink" href="#czml.czml.Ellipse.semiMinorAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>The length of the ellipse&#8217;s semi-minor axis in meters.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Ellipsoid">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Ellipsoid</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Ellipsoid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Ellipsoid" title="Permalink to this definition">¶</a></dt>
+<dd><p>An ellipsoid, which is a closed quadric surface.</p>
+<p>An ellipsoid, which is a closed quadric surface that is a three dimensional analogue of an ellipse. The ellipsoid
+is positioned and oriented using the position and orientation properties.</p>
+<dl class="method">
+<dt id="czml.czml.Ellipsoid.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Ellipsoid.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Ellipsoid.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Ellipsoid.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Ellipsoid.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Ellipsoid.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Ellipsoid.material">
+<tt class="descname">material</tt><a class="headerlink" href="#czml.czml.Ellipsoid.material" title="Permalink to this definition">¶</a></dt>
+<dd><p>The material to use to fill in the object you are creating.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Ellipsoid.radii">
+<tt class="descname">radii</tt><a class="headerlink" href="#czml.czml.Ellipsoid.radii" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Ellipsoid.show">
+<tt class="descname">show</tt><em class="property"> = True</em><a class="headerlink" href="#czml.czml.Ellipsoid.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Image">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Image</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Image"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fills the surface with an image.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Interval">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Interval</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Interval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>An time period containing a start and end time.</p>
+<dl class="attribute">
+<dt id="czml.czml.Interval.end">
+<tt class="descname">end</tt><a class="headerlink" href="#czml.czml.Interval.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>The end of an interval</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Interval.start">
+<tt class="descname">start</tt><a class="headerlink" href="#czml.czml.Interval.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>The start of an interval</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Label">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Label</tt><big>(</big><em>text=None</em>, <em>show=False</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Label"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Label" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string of text.
+The label is positioned in the scene by the position property.</p>
+<dl class="method">
+<dt id="czml.czml.Label.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Label.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Label.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Label.horizontalOrigin">
+<tt class="descname">horizontalOrigin</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Label.horizontalOrigin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Label.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Label.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Label.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Label.pixelOffset">
+<tt class="descname">pixelOffset</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Label.pixelOffset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Label.scale">
+<tt class="descname">scale</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Label.scale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Label.show">
+<tt class="descname">show</tt><em class="property"> = False</em><a class="headerlink" href="#czml.czml.Label.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Label.text">
+<tt class="descname">text</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Label.text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Material">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Material</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Material"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Material" title="Permalink to this definition">¶</a></dt>
+<dd><p>The material to use to fill the polygon.</p>
+<dl class="attribute">
+<dt id="czml.czml.Material.image">
+<tt class="descname">image</tt><a class="headerlink" href="#czml.czml.Material.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>The image to display on the surface.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Material.solidColor">
+<tt class="descname">solidColor</tt><a class="headerlink" href="#czml.czml.Material.solidColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fills the surface with a solid color, which may be translucent.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Number">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Number</tt><big>(</big><em>number=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents numbers</p>
+<dl class="method">
+<dt id="czml.czml.Number.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Number.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Number.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Number.number">
+<tt class="descname">number</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Number.number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Orientation">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Orientation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Orientation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>The orientation of the object in the world.
+The orientation has no direct visual representation, but it is used
+to orient models, cones, and pyramids attached to the object.</p>
+<p><a class="reference external" href="https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Content#orientation">https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Content#orientation</a></p>
+<dl class="attribute">
+<dt id="czml.czml.Orientation.axes">
+<tt class="descname">axes</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Orientation.axes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Orientation.interpolationAlgorithm">
+<tt class="descname">interpolationAlgorithm</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Orientation.interpolationAlgorithm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Orientation.interpolationDegree">
+<tt class="descname">interpolationDegree</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Orientation.interpolationDegree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Orientation.unitQuaternion">
+<tt class="descname">unitQuaternion</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Orientation.unitQuaternion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Path">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Path</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Path" title="Permalink to this definition">¶</a></dt>
+<dd><p>A path, which is a polyline defined by the motion of an object over time.
+The possible vertices of the path are specified by the position property.</p>
+<dl class="attribute">
+<dt id="czml.czml.Path.color">
+<tt class="descname">color</tt><a class="headerlink" href="#czml.czml.Path.color" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.leadTime">
+<tt class="descname">leadTime</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Path.leadTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.outlineWidth">
+<tt class="descname">outlineWidth</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Path.outlineWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.position">
+<tt class="descname">position</tt><a class="headerlink" href="#czml.czml.Path.position" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.properties">
+<tt class="descname">properties</tt><a class="reference internal" href="_modules/czml/czml.html#Path.properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Path.properties" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.resolution">
+<tt class="descname">resolution</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Path.resolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.show">
+<tt class="descname">show</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Path.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.trailTime">
+<tt class="descname">trailTime</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Path.trailTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Path.width">
+<tt class="descname">width</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Path.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Point">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Point</tt><big>(</big><em>show=False</em>, <em>color=None</em>, <em>pixelSize=None</em>, <em>outlineColor=None</em>, <em>outlineWidth=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Point" title="Permalink to this definition">¶</a></dt>
+<dd><p>A point, or viewport-aligned circle.
+The point is positioned in the scene by the position property.</p>
+<dl class="attribute">
+<dt id="czml.czml.Point.color">
+<tt class="descname">color</tt><a class="reference internal" href="_modules/czml/czml.html#Point.color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Point.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color of the point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Point.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Point.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Point.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Point.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Point.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Point.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Point.outlineColor">
+<tt class="descname">outlineColor</tt><a class="reference internal" href="_modules/czml/czml.html#Point.outlineColor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Point.outlineColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color of the outline of the point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Point.outlineWidth">
+<tt class="descname">outlineWidth</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Point.outlineWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Point.pixelSize">
+<tt class="descname">pixelSize</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Point.pixelSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Point.show">
+<tt class="descname">show</tt><em class="property"> = False</em><a class="headerlink" href="#czml.czml.Point.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Polygon">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Polygon</tt><big>(</big><em>color=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Polygon"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>A polygon, which is a closed figure on the surface of the Earth.
+The vertices of the polygon are specified by the vertexPositions property.</p>
+<dl class="attribute">
+<dt id="czml.czml.Polygon.material">
+<tt class="descname">material</tt><a class="headerlink" href="#czml.czml.Polygon.material" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Polygon.show">
+<tt class="descname">show</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Polygon.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Polygon.vertexPositions">
+<tt class="descname">vertexPositions</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Polygon.vertexPositions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Polyline">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Polyline</tt><big>(</big><em>show=False</em>, <em>color=None</em>, <em>width=None</em>, <em>outlineColor=None</em>, <em>outlineWidth=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Polyline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Polyline" title="Permalink to this definition">¶</a></dt>
+<dd><p>A polyline, which is a line in the scene composed of multiple segments.
+The vertices of the polyline are specified by the vertexPositions property.</p>
+<dl class="attribute">
+<dt id="czml.czml.Polyline.color">
+<tt class="descname">color</tt><a class="reference internal" href="_modules/czml/czml.html#Polyline.color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Polyline.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color of the polyline.</p>
+<p>:return</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Polyline.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Polyline.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Polyline.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Polyline.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Polyline.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Polyline.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Polyline.outlineColor">
+<tt class="descname">outlineColor</tt><a class="reference internal" href="_modules/czml/czml.html#Polyline.outlineColor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Polyline.outlineColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color of the outline of the polyline.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Polyline.outlineWidth">
+<tt class="descname">outlineWidth</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Polyline.outlineWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Polyline.show">
+<tt class="descname">show</tt><em class="property"> = False</em><a class="headerlink" href="#czml.czml.Polyline.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Polyline.width">
+<tt class="descname">width</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Polyline.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Position">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Position</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Position"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Position" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position of the object in the world.</p>
+<p>The position has no direct visual representation, but it is used to locate billboards,
+labels, and other primitives attached to the object.</p>
+<dl class="attribute">
+<dt id="czml.czml.Position.cartesian">
+<tt class="descname">cartesian</tt><a class="reference internal" href="_modules/czml/czml.html#Position.cartesian"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Position.cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position represented as a Cartesian [X, Y, Z] in the meters relative to the referenceFrame.</p>
+<p>If the array has three elements,
+the position is constant. If it has four or more elements, they
+are time-tagged samples arranged as
+[Time, X, Y, Z, Time, X, Y, Z, Time, X, Y, Z, ...],
+where Time is an ISO 8601 date and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Position.cartographicDegrees">
+<tt class="descname">cartographicDegrees</tt><a class="reference internal" href="_modules/czml/czml.html#Position.cartographicDegrees"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Position.cartographicDegrees" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position represented as a WGS 84 Cartographic</p>
+<p>[Longitude, Latitude, Height] where longitude and latitude are in
+degrees and height is in meters. If the array has three elements,
+the position is constant. If it has four or more elements, they are
+time-tagged samples arranged as
+[Time, Longitude, Latitude, Height, Time, Longitude, Latitude, Height, ...],
+where Time is an ISO 8601 date and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Position.cartographicRadians">
+<tt class="descname">cartographicRadians</tt><a class="reference internal" href="_modules/czml/czml.html#Position.cartographicRadians"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Position.cartographicRadians" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position represented as a WGS 84 Cartographic</p>
+<p>[Longitude, Latitude, Height] where longitude and latitude are in
+radians and height is in meters. If the array has three elements,
+the position is constant. If it has four or more elements, they are
+time-tagged samples arranged as
+[Time, Longitude, Latitude, Height, Time, Longitude, Latitude, Height, ...],
+where Time is an ISO 8601 date and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Position.interpolationAlgorithm">
+<tt class="descname">interpolationAlgorithm</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Position.interpolationAlgorithm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Position.interpolationDegree">
+<tt class="descname">interpolationDegree</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Position.interpolationDegree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Position.referenceFrame">
+<tt class="descname">referenceFrame</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Position.referenceFrame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Pyramid">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Pyramid</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Pyramid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Pyramid" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pyramid starts at a point or apex and extends in a specified list of directions from the apex.</p>
+<p>Each pair of directions forms a face of the pyramid. The pyramid may be capped at a radial limit.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Radii">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Radii</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Radii"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Radii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Radii is in support of ellipsoids.</p>
+<p>This class is nearly an identical
+copy of the Position class since its behavior is almost the same.</p>
+<p>The reference frame in which cartesian positions are specified.
+Possible values are &#8220;FIXED&#8221; and &#8220;INERTIAL&#8221;. In addition, the value
+of this property can be a hash (#) symbol followed by the ID of
+another object in the same scope whose &#8220;position&#8221; and &#8220;orientation&#8221;
+properties define the reference frame in which this position is defined.
+This property is ignored when specifying position with any type other
+than cartesian. If this property is not specified,
+the default reference frame is &#8220;FIXED&#8221;.</p>
+<dl class="attribute">
+<dt id="czml.czml.Radii.cartesian">
+<tt class="descname">cartesian</tt><a class="reference internal" href="_modules/czml/czml.html#Radii.cartesian"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Radii.cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position represented as a Cartesian [X, Y, Z] in the metersrelative to the referenceFrame.</p>
+<p>If the array has three elements,
+the position is constant. If it has four or more elements, they
+are time-tagged samples arranged as
+[Time, X, Y, Z, Time, X, Y, Z, Time, X, Y, Z, ...],
+where Time is an ISO 8601 date and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.Radii.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Radii.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Radii.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Radii.referenceFrame">
+<tt class="descname">referenceFrame</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.Radii.referenceFrame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.Scale">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">Scale</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Scale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>The scale of the billboard.</p>
+<p>The scale is multiplied with the
+pixel size of the billboard&#8217;s image. For example, if the scale is 2.0,
+the billboard will be rendered with twice the number of pixels,
+in each direction, of the image.</p>
+<dl class="method">
+<dt id="czml.czml.Scale.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#Scale.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Scale.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.Scale.number">
+<tt class="descname">number</tt><a class="reference internal" href="_modules/czml/czml.html#Scale.number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.Scale.number" title="Permalink to this definition">¶</a></dt>
+<dd><p>The floating-point value.</p>
+<p>The value may be a single number,
+in which case the value is constant over the interval, or it may
+be an array. If it is an array and the array has one element,
+the value is constant over the interval. If it has two or more
+elements, they are time-tagged samples arranged as
+[Time, Value, Time, Value, ...], where Time is an ISO 8601 date
+and time string or seconds since epoch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.SolidColor">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">SolidColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#SolidColor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.SolidColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fills the surface with a solid color, which may be translucent.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="czml.czml.VertexPositions">
+<em class="property">class </em><tt class="descclassname">czml.czml.</tt><tt class="descname">VertexPositions</tt><big>(</big><em>referenceFrame=None</em>, <em>cartesian=None</em>, <em>cartographicRadians=None</em>, <em>cartographicDegrees=None</em>, <em>references=None</em>, <em>**kwargs</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#VertexPositions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.VertexPositions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The world-space positions of vertices.</p>
+<p>The vertex positions have no direct visual representation, but they
+are used to define polygons, polylines, and other objects attached
+to the object.</p>
+<dl class="attribute">
+<dt id="czml.czml.VertexPositions.cartesian">
+<tt class="descname">cartesian</tt><a class="reference internal" href="_modules/czml/czml.html#VertexPositions.cartesian"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.VertexPositions.cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of positions represented as Cartesian</p>
+<p>[X, Y, Z, X, Y, Z, ...] in the meters
+relative to the referenceFrame.</p>
+<p>:return</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.VertexPositions.cartographicDegrees">
+<tt class="descname">cartographicDegrees</tt><a class="reference internal" href="_modules/czml/czml.html#VertexPositions.cartographicDegrees"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.VertexPositions.cartographicDegrees" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of positions represented as WGS 84</p>
+<p>[Longitude, Latitude, Height, Longitude, Latitude, Height, ...]
+where longitude and latitude are in degrees and height is in meters.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.VertexPositions.cartographicRadians">
+<tt class="descname">cartographicRadians</tt><a class="reference internal" href="_modules/czml/czml.html#VertexPositions.cartographicRadians"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.VertexPositions.cartographicRadians" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of positions represented as WGS 84</p>
+<p>[Longitude, Latitude, Height, Longitude, Latitude, Height, ...]
+where longitude and latitude are in radians and height is in meters.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.VertexPositions.data">
+<tt class="descname">data</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/czml/czml.html#VertexPositions.data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.VertexPositions.data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="czml.czml.VertexPositions.load">
+<tt class="descname">load</tt><big>(</big><em>data</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#VertexPositions.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.VertexPositions.load" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.VertexPositions.referenceFrame">
+<tt class="descname">referenceFrame</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.VertexPositions.referenceFrame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="czml.czml.VertexPositions.references">
+<tt class="descname">references</tt><em class="property"> = None</em><a class="headerlink" href="#czml.czml.VertexPositions.references" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="czml.czml.class_property">
+<tt class="descclassname">czml.czml.</tt><tt class="descname">class_property</tt><big>(</big><em>cls</em>, <em>name</em>, <em>doc=None</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#class_property"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.class_property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a property function that checks to be sure
+the value being assigned is a certain class before assigning it to a hidden
+variable defined by &#8220;_&#8221; + name.  Also transparently returns the data()
+method when the object value is requested.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cls</strong> &#8211; </li>
+<li><strong>name</strong> &#8211; </li>
+<li><strong>doc</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="czml.czml.datetime_property">
+<tt class="descclassname">czml.czml.</tt><tt class="descname">datetime_property</tt><big>(</big><em>name</em>, <em>allow_offset=False</em>, <em>doc=None</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#datetime_property"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.datetime_property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a datetime property that handles strings and timezones.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; </li>
+<li><strong>allow_offset</strong> &#8211; </li>
+<li><strong>doc</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="czml.czml.grouper">
+<tt class="descclassname">czml.czml.</tt><tt class="descname">grouper</tt><big>(</big><em>iterable</em>, <em>n</em>, <em>fillvalue=None</em><big>)</big><a class="reference internal" href="_modules/czml/czml.html#grouper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#czml.czml.grouper" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>iterable</strong> &#8211; </li>
+<li><strong>n</strong> &#8211; </li>
+<li><strong>fillvalue</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="czml.czml.material_property">
+<tt class="descclassname">czml.czml.</tt><tt class="descname">material_property</tt><big>(</big><em>x</em><big>)</big><a class="headerlink" href="#czml.czml.material_property" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="History.html" class="btn btn-neutral float-right" title="History">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to czml’s documentation!"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Nick Roth.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
